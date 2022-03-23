@@ -25,6 +25,8 @@ a {
   list-style: none;
 }
 
+/*  HEADER  */
+
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -42,8 +44,12 @@ a {
 }
 
 .nav-links > li > a {
-  margin: 0 25px;
   color: var(--veryDarkBlue);
+  margin: 0 25px;
+}
+
+.nav-links > li > a:hover {
+  color: var(--softRed);
 }
 
 .login-btn {
@@ -51,7 +57,14 @@ a {
   background-color: var(--softRed);
   padding: 10px 30px;
   margin-left: 20px;
+  border: 2px solid transparent; /* prevents hover state movement */
   border-radius: 5px;
+}
+
+.login-btn:hover {
+  color: var(--softRed);
+  background-color: white;
+  border: 2px solid var(--softRed);
 }
 
 /*  Section 1  */
@@ -67,18 +80,18 @@ a {
   padding: 85px 0 0 200px;
 }
 
-.intro-text > h2 {
+.intro-text > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 43px;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .intro-text > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  color: var(--grayishBlue);
   font-size: 16px;
+  color: var(--grayishBlue);
   max-width: 450px;
   margin: 20px 0 40px 0;
   line-height: 25px;
@@ -87,24 +100,71 @@ a {
 .chrome-btn {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  font-size: 14px;
   color: white;
   background-color: var(--softBlue);
-  font-size: 14px;
   padding: 12px 20px;
   margin-right: 7px;
+  border: 2px solid transparent;
   border-radius: 5px;
+}
+
+.chrome-btn:hover {
+  color: var(--softBlue);
+  background-color: white;
+  border: 2px solid var(--softBlue);
 }
 
 .firefox-btn {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+  font-size: 14px;
   color: var(--veryDarkBlue);
   background-color: lightgrey;
-  font-size: 14px;
+  border: 2px solid transparent;
   padding: 12px 20px;
   border-radius: 5px;
 }
 
+.firefox-btn:hover {
+  color: var(--veryDarkBlue);
+  background-color: white;
+  border: 2px solid var(--veryDarkBlue);
+}
+
 .intro-image {
   margin-right: 100px;
+}
+
+/* Sectrion 2  */
+.features-section {
+  text-align: center;
+}
+
+.features-section > h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.features-section > p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: var(--grayishBlue);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 24px;
+}
+
+.features-list {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: var(--grayishBlue);
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.features-list > li {
+  margin: 0 35px;
 }
