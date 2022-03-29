@@ -25,6 +25,43 @@ a {
   list-style: none;
 }
 
+hr {
+  border: 1px solid lightgrey;
+}
+
+/*  Button Styling  */
+
+.redBTN {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+  background-color: var(--softRed);
+  border: 2px solid transparent; /* prevents hover state movement */
+  border-radius: 5px;
+}
+
+.redBTN:hover {
+  color: var(--softRed);
+  background-color: white;
+  border: 2px solid var(--softRed);
+}
+
+.blueBTN {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  background-color: var(--softBlue);
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.blueBTNH:hover {
+  color: var(--softBlue);
+  background-color: white;
+  border: 2px solid var(--softBlue);
+}
+
 /*  HEADER  */
 
 .header-nav {
@@ -53,18 +90,8 @@ a {
 }
 
 .login-btn {
-  color: white;
-  background-color: var(--softRed);
   padding: 10px 30px;
   margin-left: 20px;
-  border: 2px solid transparent; /* prevents hover state movement */
-  border-radius: 5px;
-}
-
-.login-btn:hover {
-  color: var(--softRed);
-  background-color: white;
-  border: 2px solid var(--softRed);
 }
 
 /*  Section 1  */
@@ -98,21 +125,8 @@ a {
 }
 
 .chrome-btn {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: white;
-  background-color: var(--softBlue);
   padding: 12px 20px;
   margin-right: 7px;
-  border: 2px solid transparent;
-  border-radius: 5px;
-}
-
-.chrome-btn:hover {
-  color: var(--softBlue);
-  background-color: white;
-  border: 2px solid var(--softBlue);
 }
 
 .firefox-btn {
@@ -120,7 +134,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   color: var(--veryDarkBlue);
-  background-color: lightgrey;
+  background-color: hsl(0, 0%, 97%); /* add box shadow */
   border: 2px solid transparent;
   padding: 12px 20px;
   border-radius: 5px;
@@ -205,14 +219,7 @@ a {
 /*  Features Tab  */
 
 .features-tab-btn {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: white;
-  background-color: var(--softBlue);
-  border: 2px solid transparent;
   padding: 12px 20px;
-  border-radius: 5px;
 }
 
 .feature-tab-1 {
@@ -241,8 +248,8 @@ a {
   font-weight: 400;
   color: var(--grayishBlue);
   max-width: 400px;
-  line-height: 24px;
   margin-bottom: 35px;
+  line-height: 24px;
 }
 
 .feature-tab-2 {
@@ -271,8 +278,8 @@ a {
   font-weight: 400;
   color: var(--grayishBlue);
   max-width: 400px;
-  line-height: 24px;
   margin-bottom: 35px;
+  line-height: 24px;
 }
 
 .feature-tab-3 {
@@ -292,8 +299,8 @@ a {
 .features-tab-text-3 > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  max-width: 350px;
   margin-bottom: 25px;
+  max-width: 350px;
 }
 
 .features-tab-text-3 > p {
@@ -301,8 +308,8 @@ a {
   font-weight: 400;
   color: var(--grayishBlue);
   max-width: 400px;
-  line-height: 24px;
   margin-bottom: 35px;
+  line-height: 24px;
 }
 
 /* Section 3 */
@@ -341,8 +348,8 @@ a {
 .chrome-download {
   max-width: 280px;
   padding: 35px 0;
-  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
   border-radius: 10px;
+  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .chrome-download > h3 {
@@ -366,8 +373,8 @@ a {
   max-width: 280px;
   padding: 35px 0;
   margin: 60px 0 0 25px;
-  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
   border-radius: 10px;
+  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .firefox-download > h3 {
@@ -391,8 +398,8 @@ a {
   max-width: 280px;
   padding: 35px 0;
   margin: 120px 0 0 25px;
-  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
   border-radius: 10px;
+  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .opera-download > h3 {
@@ -412,20 +419,14 @@ a {
   padding-bottom: 15px;
 }
 
-.exP {
+.install-btn {
   padding: 12px 35px;
-}
-
-.exP:hover {
-  color: var(--softBlue);
-  background-color: white;
-  border-color: var(--softBlue);
 }
 
 /* Section 4 */
 
 .FAQ-section {
-  padding-top: 130px;
+  padding: 130px 0 40px 0;
 }
 
 .FAQ-section > h2 {
@@ -449,13 +450,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 35%;
   padding-top: 40px;
   margin: 0 auto;
-  width: 35%;
-}
-
-hr {
-  border: 1px solid lightgrey;
 }
 
 .question-text {
@@ -479,40 +476,89 @@ hr {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
+  display: none;
   max-width: 530px;
   padding: 10px 0 25px 0;
   line-height: 25px;
-  display: none;
 }
 
 .A2 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
+  display: none;
   max-width: 530px;
   padding: 10px 0 25px 0;
   line-height: 25px;
-  display: none;
 }
 
 .A3 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
+  display: none;
   max-width: 530px;
   padding: 10px 0 25px 0;
   line-height: 25px;
-  display: none;
 }
 
 .A4 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
+  display: none;
   max-width: 530px;
   padding: 10px 0 25px 0;
   line-height: 25px;
-  display: none;
 }
 
-/* 
+.mInfo {
+  padding: 12px 15px;
+  margin: 35px auto;
+}
+
+.email-signup-section {
+  background-color: hsl(231, 69%, 60%);
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+}
+
+.email-signup-section > h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: white;
+  max-width: 350px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.email-signup-section > h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: white;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  letter-spacing: 4px;
+}
+
+.sign-up {
+  display: flex;
+  margin: 0 auto;
+}
+
+.email-input {
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-btn {
+  font-size: 14px;
+  padding: 12px 20px;
+  margin-left: 12px;
+}
+
+footer {
+  background-color: hsl(231, 32%, 21%);
+}
