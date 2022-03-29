@@ -1,14 +1,58 @@
-let questionOne = document.querySelectorAll(".Q1");
-let answerOne = document.querySelectorAll(".A1");
+let questionOne = document.getElementById("Q1");
+let answerOne = document.querySelector(".A1");
 
-function faqOne() {
-  answerOne.style.display = "block";
+let questionTwo = document.getElementById("Q2");
+let answerTwo = document.querySelector(".A2");
+
+let questionThree = document.getElementById("Q3");
+let answerThree = document.querySelector(".A3");
+
+let questionFour = document.getElementById("Q4");
+let answerFour = document.querySelector(".A4");
+
+//
+
+questionOne.addEventListener("click", faqQOne);
+
+function faqQOne() {
+  if (answerOne.style.display == "none") {
+    answerOne.style.display = "block";
+  } else {
+    answerOne.style.display = "none";
+  }
+}
+//
+
+questionTwo.addEventListener("click", faqQTwo);
+
+function faqQTwo() {
+  if (answerTwo.style.display == "none") {
+    answerTwo.style.display = "block";
+  } else {
+    answerTwo.style.display = "none";
+  }
 }
 
-for (e = 0; e < answerOne.length; e++) {
-  answerOne[e].style.display = "block";
+//
+
+questionThree.addEventListener("click", faqQThree);
+
+function faqQThree() {
+  if (answerThree.style.display == "none") {
+    answerThree.style.display = "block";
+  } else {
+    answerThree.style.display = "none";
+  }
 }
 
-for (i = 0; i < questionOne.length; i++) {
-  questionOne[i].addEventListener("click", faqOne);
+//
+
+questionFour.addEventListener("click", faqQFour);
+
+function faqQFour() {
+  if (answerFour.style.display == "none") {
+    answerFour.style.display = "block";
+  } else {
+    answerFour.style.display = "none";
+  }
 }
