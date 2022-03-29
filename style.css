@@ -458,19 +458,19 @@ hr {
   border: 1px solid lightgrey;
 }
 
-.Vis1 {
+.question-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 15px 15px 0;
 }
 
-.Vis1:hover {
+.question-text:hover {
   color: var(--softRed);
   cursor: pointer;
 }
 
-.Vis1 > h4 {
+.question-text > h4 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
@@ -514,3 +514,5 @@ hr {
   line-height: 25px;
   display: none;
 }
+
+/* 
