@@ -90,7 +90,7 @@ hr {
 }
 
 .login-btn {
-  padding: 10px 30px;
+  padding: 8px 30px;
   margin-left: 20px;
 }
 
@@ -349,7 +349,7 @@ hr {
   max-width: 280px;
   padding: 35px 0;
   border-radius: 10px;
-  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .chrome-download > h3 {
@@ -374,7 +374,7 @@ hr {
   padding: 35px 0;
   margin: 60px 0 0 25px;
   border-radius: 10px;
-  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .firefox-download > h3 {
@@ -399,7 +399,7 @@ hr {
   padding: 35px 0;
   margin: 120px 0 0 25px;
   border-radius: 10px;
-  box-shadow: 0 2rem 1.1rem rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .opera-download > h3 {
@@ -426,7 +426,7 @@ hr {
 /* Section 4 */
 
 .FAQ-section {
-  padding: 130px 0 40px 0;
+  padding: 150px 0 50px 0;
 }
 
 .FAQ-section > h2 {
@@ -514,33 +514,33 @@ hr {
 
 .mInfo {
   padding: 12px 15px;
-  margin: 35px auto;
+  margin: 50px auto;
 }
 
 .email-signup-section {
-  background-color: hsl(231, 69%, 60%);
   display: flex;
   flex-direction: column;
+  background-color: hsl(231, 69%, 60%);
   padding: 70px 0;
 }
 
-.email-signup-section > h2 {
+.email-signup-section > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   color: white;
-  max-width: 350px;
-  padding-bottom: 25px;
+  max-width: 450px;
+  padding-bottom: 40px;
   margin: 0 auto;
   text-align: center;
 }
 
-.email-signup-section > h6 {
+.email-signup-section > h5 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: white;
   padding-bottom: 25px;
   margin: 0 auto;
-  letter-spacing: 4px;
+  letter-spacing: 4.5px;
 }
 
 .sign-up {
@@ -549,16 +549,64 @@ hr {
 }
 
 .email-input {
+  color: var(--grayishBlue);
+  background-color: white;
+  font-size: 14px;
+  width: 320px;
+  padding: 13px 20px;
   border: none;
   border-radius: 5px;
 }
 
 .contact-btn {
   font-size: 14px;
-  padding: 12px 20px;
-  margin-left: 12px;
+  padding: 13px 25px;
+  margin-left: 20px;
 }
+
+/* Footer */
 
 footer {
   background-color: hsl(231, 32%, 21%);
+  padding: 25px 200px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.lh {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-links > li {
+  padding: 0 30px;
+}
+
+.footer-links > li > a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.footer-links > li > a:hover {
+  color: var(--softRed);
+}
+
+.social-links > a > img {
+  padding: 0 20px;
 }
