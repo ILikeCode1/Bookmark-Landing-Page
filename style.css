@@ -18,6 +18,15 @@
   margin: 0;
 }
 
+html,
+body {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
 ul,
 li,
 a {
@@ -26,7 +35,7 @@ a {
 }
 
 hr {
-  border: 1px solid lightgrey;
+  border: 0.1rem solid lightgrey;
 }
 
 /*  Button Styling  */
@@ -36,30 +45,29 @@ hr {
   font-weight: 400;
   color: white;
   background-color: var(--softRed);
-  border: 2px solid transparent; /* prevents hover state movement */
-  border-radius: 5px;
+  border: 0.2rem solid transparent; /* prevents hover state movement */
+  border-radius: 0.5rem;
 }
 
 .redBTN:hover {
   color: var(--softRed);
   background-color: white;
-  border: 2px solid var(--softRed);
+  border: 0.2rem solid var(--softRed);
 }
 
 .blueBTN {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 14px;
   color: white;
   background-color: var(--softBlue);
-  border: 2px solid transparent;
-  border-radius: 5px;
+  border: 0.2rem solid transparent;
+  border-radius: 0.5rem;
 }
 
 .blueBTNH:hover {
   color: var(--softBlue);
   background-color: white;
-  border: 2px solid var(--softBlue);
+  border: 0.2rem solid var(--softBlue);
 }
 
 /*  HEADER  */
@@ -68,13 +76,12 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 200px;
+  padding: 3.5rem 20rem;
 }
 
 .nav-links {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +89,7 @@ hr {
 
 .nav-links > li > a {
   color: var(--veryDarkBlue);
-  margin: 0 25px;
+  margin: 0 2.5rem;
 }
 
 .nav-links > li > a:hover {
@@ -90,8 +97,8 @@ hr {
 }
 
 .login-btn {
-  padding: 8px 30px;
-  margin-left: 20px;
+  padding: 0.8rem 3rem;
+  margin-left: 2rem;
 }
 
 /*  Section 1  */
@@ -100,75 +107,74 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 
 .intro-text {
-  padding: 85px 0 0 200px;
+  padding: 8.5rem 0 0 20rem;
 }
 
 .intro-text > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  font-size: 43px;
-  max-width: 450px;
+  font-size: 4.3rem;
+  max-width: 45rem;
 }
 
 .intro-text > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--grayishBlue);
-  max-width: 450px;
-  margin: 20px 0 40px 0;
-  line-height: 25px;
+  max-width: 45rem;
+  margin: 2rem 0 4rem 0;
+  line-height: 2.5rem;
 }
 
 .chrome-btn {
-  padding: 12px 20px;
-  margin-right: 7px;
+  padding: 1.2rem 2rem;
+  margin-right: 0.7rem;
 }
 
 .firefox-btn {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 14px;
   color: var(--veryDarkBlue);
   background-color: hsl(0, 0%, 97%); /* add box shadow */
-  border: 2px solid transparent;
-  padding: 12px 20px;
-  border-radius: 5px;
+  border: 0.2rem solid transparent;
+  padding: 1.2rem 2rem;
+  border-radius: 0.5rem;
 }
 
 .firefox-btn:hover {
   color: var(--veryDarkBlue);
   background-color: white;
-  border: 2px solid var(--veryDarkBlue);
+  border: 0.2rem solid var(--veryDarkBlue);
 }
 
 .intro-image {
-  margin-right: 100px;
+  margin-right: 10rem;
 }
 
 /* Sectrion 2  */
 .features-section {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 7rem;
 }
 
 .features-section > h2 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .features-section > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 480px;
+  max-width: 48rem;
   margin: 0 auto;
-  line-height: 24px;
+  line-height: 2.4rem;
 }
 
 .features-list {
@@ -176,17 +182,17 @@ hr {
   font-weight: 400;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .f-btn {
-  margin: 0 35px;
+  margin: 0 3.5rem;
 }
 
 #features-selector-1 {
   color: var(--grayishBlue);
-  padding-bottom: 15px;
-  border-bottom: 1px solid grey;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid grey;
 }
 
 #features-selector-1:hover {
@@ -196,8 +202,8 @@ hr {
 
 #features-selector-2 {
   color: var(--grayishBlue);
-  padding-bottom: 15px;
-  border-bottom: 1px solid grey;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid grey;
 }
 
 #features-selector-2:hover {
@@ -207,8 +213,8 @@ hr {
 
 #features-selector-3 {
   color: var(--grayishBlue);
-  padding-bottom: 15px;
-  border-bottom: 1px solid grey;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid grey;
 }
 
 #features-selector-3:hover {
@@ -219,7 +225,7 @@ hr {
 /*  Features Tab  */
 
 .features-tab-btn {
-  padding: 12px 20px;
+  padding: 1.2rem 2rem;
 }
 
 .feature-tab-1 {
@@ -228,28 +234,28 @@ hr {
 }
 
 .feature-tab-1-img {
-  margin: 60px 0 0 200px;
+  margin: 6rem 0 0 20rem;
 }
 
 .features-tab-text-1 {
-  margin: 120px 0 0 120px;
+  margin: 12rem 0 0 12rem;
   text-align: start;
 }
 
 .features-tab-text-1 > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  max-width: 340px;
-  margin-bottom: 25px;
+  max-width: 34rem;
+  margin-bottom: 2.5rem;
 }
 
 .features-tab-text-1 > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 400px;
-  margin-bottom: 35px;
-  line-height: 24px;
+  max-width: 40rem;
+  margin-bottom: 3.5rem;
+  line-height: 2.4rem;
 }
 
 .feature-tab-2 {
@@ -258,28 +264,28 @@ hr {
 }
 
 .feature-tab-2-img {
-  margin: 60px 0 0 200px;
+  margin: 6rem 0 0 20rem;
 }
 
 .features-tab-text-2 {
-  margin: 120px 0 0 120px;
+  margin: 12rem 0 0 12rem;
   text-align: start;
 }
 
 .features-tab-text-2 > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  max-width: 340px;
-  margin-bottom: 25px;
+  max-width: 34rem;
+  margin-bottom: 2.5rem;
 }
 
 .features-tab-text-2 > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 400px;
-  margin-bottom: 35px;
-  line-height: 24px;
+  max-width: 40rem;
+  margin-bottom: 3.5rem;
+  line-height: 2.4rem;
 }
 
 .feature-tab-3 {
@@ -288,54 +294,54 @@ hr {
 }
 
 .feature-tab-3-img {
-  margin: 60px 0 0 200px;
+  margin: 6rem 0 0 20rem;
 }
 
 .features-tab-text-3 {
-  margin: 120px 0 0 120px;
   text-align: start;
+  margin: 12rem 0 0 12rem;
 }
 
 .features-tab-text-3 > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  margin-bottom: 25px;
-  max-width: 350px;
+  margin-bottom: 2.5rem;
+  max-width: 35rem;
 }
 
 .features-tab-text-3 > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 400px;
-  margin-bottom: 35px;
-  line-height: 24px;
+  max-width: 40rem;
+  margin-bottom: 3.5rem;
+  line-height: 2.4rem;
 }
 
 /* Section 3 */
 
 .dots {
-  padding: 35px 0;
+  padding: 3.5rem 0;
 }
 
 .download-section {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 7rem;
 }
 
 .download-section > h2 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .download-section > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 500px;
+  max-width: 50rem;
   margin: 0 auto;
-  line-height: 24px;
+  line-height: 2.4rem;
 }
 
 .download-boxes {
@@ -346,103 +352,103 @@ hr {
 }
 
 .chrome-download {
-  max-width: 280px;
-  padding: 35px 0;
-  border-radius: 10px;
+  max-width: 28rem;
+  padding: 3.5rem 0;
+  border-radius: 1rem;
   box-shadow: 0 1rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .chrome-download > h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 .chrome-download > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+
   color: var(--grayishBlue);
 }
 
 .chrome-logo {
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
 }
 
 .firefox-download {
-  max-width: 280px;
-  padding: 35px 0;
-  margin: 60px 0 0 25px;
-  border-radius: 10px;
+  max-width: 28rem;
+  padding: 3.5rem 0;
+  margin: 6rem 0 0 2.5rem;
+  border-radius: 1rem;
   box-shadow: 0 1rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .firefox-download > h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 .firefox-download > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+
   color: var(--grayishBlue);
 }
 
 .firefox-logo {
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
 }
 
 .opera-download {
-  max-width: 280px;
-  padding: 35px 0;
-  margin: 120px 0 0 25px;
-  border-radius: 10px;
+  max-width: 28rem;
+  padding: 3.5rem 0;
+  margin: 12rem 0 0 2.5rem;
+  border-radius: 1rem;
   box-shadow: 0 1rem 1.1rem rgba(0, 0, 0, 0.14);
 }
 
 .opera-download > h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 .opera-download > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+
   color: var(--grayishBlue);
 }
 
 .opera-logo {
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
 }
 
 .install-btn {
-  padding: 12px 35px;
+  padding: 1.2rem 3.5rem;
 }
 
 /* Section 4 */
 
 .FAQ-section {
-  padding: 150px 0 50px 0;
+  padding: 15rem 0 5rem 0;
 }
 
 .FAQ-section > h2 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .FAQ-section > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 450px;
+  max-width: 45rem;
   margin: 0 auto;
-  line-height: 24px;
+  line-height: 2.4rem;
   text-align: center;
 }
 
@@ -451,7 +457,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   width: 35%;
-  padding-top: 40px;
+  padding-top: 4rem;
   margin: 0 auto;
 }
 
@@ -459,7 +465,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 15px 15px 0;
+  padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
 .question-text:hover {
@@ -477,9 +483,9 @@ hr {
   font-weight: 400;
   color: var(--grayishBlue);
   display: none;
-  max-width: 530px;
-  padding: 10px 0 25px 0;
-  line-height: 25px;
+  max-width: 53rem;
+  padding: 1rem 0 2.5rem 0;
+  line-height: 2.5rem;
 }
 
 .A2 {
@@ -487,9 +493,9 @@ hr {
   font-weight: 400;
   color: var(--grayishBlue);
   display: none;
-  max-width: 530px;
-  padding: 10px 0 25px 0;
-  line-height: 25px;
+  max-width: 53rem;
+  padding: 1rem 0 2.5rem 0;
+  line-height: 2.5rem;
 }
 
 .A3 {
@@ -497,9 +503,9 @@ hr {
   font-weight: 400;
   color: var(--grayishBlue);
   display: none;
-  max-width: 530px;
-  padding: 10px 0 25px 0;
-  line-height: 25px;
+  max-width: 53rem;
+  padding: 1rem 0 2.5rem 0;
+  line-height: 2.5rem;
 }
 
 .A4 {
@@ -507,29 +513,29 @@ hr {
   font-weight: 400;
   color: var(--grayishBlue);
   display: none;
-  max-width: 530px;
-  padding: 10px 0 25px 0;
-  line-height: 25px;
+  max-width: 53rem;
+  padding: 1rem 0 2.5rem 0;
+  line-height: 2.5rem;
 }
 
 .mInfo {
-  padding: 12px 15px;
-  margin: 50px auto;
+  padding: 1.2rem 1.5rem;
+  margin: 5rem auto;
 }
 
 .email-signup-section {
   display: flex;
   flex-direction: column;
   background-color: hsl(231, 69%, 60%);
-  padding: 70px 0;
+  padding: 7rem 0;
 }
 
 .email-signup-section > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   color: white;
-  max-width: 450px;
-  padding-bottom: 40px;
+  max-width: 45rem;
+  padding-bottom: 4rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -538,9 +544,9 @@ hr {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: white;
-  padding-bottom: 25px;
+  padding-bottom: 2.5rem;
   margin: 0 auto;
-  letter-spacing: 4.5px;
+  letter-spacing: 0.45rem;
 }
 
 .sign-up {
@@ -551,24 +557,24 @@ hr {
 .email-input {
   color: var(--grayishBlue);
   background-color: white;
-  font-size: 14px;
-  width: 320px;
-  padding: 13px 20px;
+  font-size: 1.4rem;
+  width: 32rem;
+  padding: 1.3rem 2rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 .contact-btn {
-  font-size: 14px;
-  padding: 13px 25px;
-  margin-left: 20px;
+  font-size: 1.4rem;
+  padding: 1.3rem 2.5rem;
+  margin-left: 2rem;
 }
 
 /* Footer */
 
 footer {
   background-color: hsl(231, 32%, 21%);
-  padding: 25px 200px;
+  padding: 2.5rem 20rem;
 }
 
 .footer-nav {
@@ -583,7 +589,7 @@ footer {
 }
 
 .footer-logo {
-  margin-right: 40px;
+  margin-right: 4rem;
 }
 
 .footer-links {
@@ -592,15 +598,15 @@ footer {
 }
 
 .footer-links > li {
-  padding: 0 30px;
+  padding: 0 3rem;
 }
 
 .footer-links > li > a {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
 }
 
 .footer-links > li > a:hover {
@@ -608,5 +614,5 @@ footer {
 }
 
 .social-links > a > img {
-  padding: 0 20px;
+  padding: 0 2rem;
 }
