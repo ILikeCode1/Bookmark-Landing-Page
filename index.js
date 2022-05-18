@@ -14,8 +14,6 @@ let questionFour = document.getElementById("Q4");
 let answerFour = document.querySelector(".A4");
 let arrowFour = document.querySelector(".arrow4");
 
-//
-
 questionOne.addEventListener("click", faqQOne);
 
 function faqQOne() {
@@ -66,5 +64,61 @@ function faqQFour() {
   } else {
     answerFour.style.display = "none";
     arrowFour.style.rotate = "0deg";
+  }
+}
+
+//
+
+let featuresSelector1 = document.getElementById("features-selector-1");
+let featuresTab1 = document.querySelector(".feature-tab-1");
+
+var featuresSelector2 = document.getElementById("features-selector-2 ");
+let featuresTab2 = document.querySelector(".feature-tab-2");
+
+let featuresSelector3 = document.getElementById("features-selector-3");
+let featuresTab3 = document.querySelector(".feature-tab-3");
+
+featuresSelector1.addEventListener("click", tabOne);
+
+function tabOne() {
+  if (featuresTab1.style.display == "none") {
+    featuresTab1.style.display = "flex";
+    featuresTab2.style.display = "none";
+    featuresTab3.style.display = "none";
+  } else {
+    featuresTab1.style.display = "flex";
+    featuresTab2.style.display = "none";
+    featuresTab3.style.display = "none";
+  }
+}
+
+/*featuresSelector2.addEventListener("click", tabTwo);
+
+function tabTwo() {
+  if (featuresTab2.style.display == "none") {
+    featuresTab2.style.display = "flex";
+    featuresTab1.style.display = "none";
+    featuresTab3.style.display = "none";
+  } else {
+    featuresTab2.style.display = "flex";
+    featuresTab1.style.display = "none";
+    featuresTab3.style.display = "none";
+  }
+}
+
+*/
+featuresSelector3.addEventListener("click", tabThree);
+
+function tabThree() {
+  if (featuresTab3.style.display == "none") {
+    featuresTab3.style.display = "flex";
+    featuresTab1.style.display = "none";
+    featuresTab2.style.display = "none";
+  } else {
+    featuresTab3.style.display = "flex";
+    featuresSelector3.style.color = "hsl(229, 31%, 21%)";
+    featuresTab1.style.display = "none";
+    featuresSelector1.style.color = "hsl(229, 8%, 60%)";
+    featuresTab2.style.display = "none";
   }
 }
