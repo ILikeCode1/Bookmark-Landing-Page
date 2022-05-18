@@ -172,7 +172,7 @@ hr {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 48rem;
+  max-width: 45rem;
   margin: 0 auto;
   line-height: 2.4rem;
 }
@@ -185,60 +185,98 @@ hr {
   margin-top: 4rem;
 }
 
-.f-btn {
-  margin: 0 3.5rem;
-}
-
 #features-selector-1 {
-  color: var(--grayishBlue);
-  padding-bottom: 1.5rem;
-  border-bottom: 0.1rem solid grey;
+  color: var(--veryDarkBlue);
+  cursor: pointer;
 }
 
 #features-selector-1:hover {
   color: var(--softRed);
-  cursor: pointer;
 }
+
+#features-selector-1::after {
+  content: "";
+  position: relative;
+  display: block;
+  background-color: var(--softRed);
+  width: 21.4rem;
+  height: 0.4rem;
+  margin-top: 1.7rem;
+}
+
+/*#features-selector-1:hover::after {
+  background-color: var(--softRed);
+  height: 0.4rem;
+}
+*/
 
 #features-selector-2 {
   color: var(--grayishBlue);
-  padding-bottom: 1.5rem;
-  border-bottom: 0.1rem solid grey;
+  cursor: pointer;
 }
 
 #features-selector-2:hover {
   color: var(--softRed);
-  cursor: pointer;
 }
+
+#features-selector-2::after {
+  content: "";
+  position: relative;
+  display: block;
+  background-color: var(--grayishBlue);
+  width: 21.4rem;
+  height: 0.1rem;
+  margin-top: 2rem;
+}
+
+/*#features-selector-2:hover::after {
+  background-color: var(--softRed);
+  height: 0.4rem;
+  margin-top: 1.7rem;
+}
+*/
 
 #features-selector-3 {
   color: var(--grayishBlue);
-  padding-bottom: 1.5rem;
-  border-bottom: 0.1rem solid grey;
+  cursor: pointer;
 }
 
 #features-selector-3:hover {
   color: var(--softRed);
-  cursor: pointer;
 }
+
+#features-selector-3::after {
+  content: "";
+  position: relative;
+  display: block;
+  background-color: var(--grayishBlue);
+  width: 21.4rem;
+  height: 0.1rem;
+  margin-top: 2rem;
+}
+
+/*#features-selector-3:hover::after {
+  background-color: var(--softRed);
+  height: 0.4rem;
+  margin-top: 1.7rem;
+}
+*/
 
 /*  Features Tab  */
 
 .features-tab-btn {
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 2.2rem;
 }
 
 .feature-tab-1 {
   display: flex;
   flex-direction: row;
-}
-
-.feature-tab-1-img {
-  margin: 6rem 0 0 20rem;
+  justify-content: center;
+  padding: 6rem 0 15rem 0;
 }
 
 .features-tab-text-1 {
-  margin: 12rem 0 0 12rem;
+  margin: 6rem 0 0 10rem;
   text-align: start;
 }
 
@@ -254,12 +292,12 @@ hr {
   font-weight: 400;
   color: var(--grayishBlue);
   max-width: 40rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 4.5rem;
   line-height: 2.4rem;
 }
 
 .feature-tab-2 {
-  display: flex;
+  display: none;
   flex-direction: row;
 }
 
@@ -289,32 +327,30 @@ hr {
 }
 
 .feature-tab-3 {
-  display: flex;
+  display: none;
   flex-direction: row;
-}
-
-.feature-tab-3-img {
-  margin: 6rem 0 0 20rem;
+  justify-content: center;
+  padding: 6rem 0 10rem 0;
 }
 
 .features-tab-text-3 {
+  margin: 6rem 0 0 10rem;
   text-align: start;
-  margin: 12rem 0 0 12rem;
 }
 
 .features-tab-text-3 > h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
+  max-width: 34rem;
   margin-bottom: 2.5rem;
-  max-width: 35rem;
 }
 
 .features-tab-text-3 > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 40rem;
-  margin-bottom: 3.5rem;
+  max-width: 36rem;
+  margin-bottom: 4.5rem;
   line-height: 2.4rem;
 }
 
@@ -432,7 +468,7 @@ hr {
 /* Section 4 */
 
 .FAQ-section {
-  padding: 15rem 0 5rem 0;
+  padding: 15rem 0 6rem 0;
 }
 
 .FAQ-section > h2 {
@@ -519,7 +555,7 @@ hr {
 }
 
 .mInfo {
-  padding: 1.2rem 1.5rem;
+  padding: 1.2rem 2.2rem;
   margin: 5rem auto;
 }
 
@@ -558,15 +594,14 @@ hr {
   color: var(--grayishBlue);
   background-color: white;
   font-size: 1.4rem;
-  width: 32rem;
+  width: 30rem;
   padding: 1.3rem 2rem;
   border: none;
   border-radius: 0.5rem;
 }
 
 .contact-btn {
-  font-size: 1.4rem;
-  padding: 1.3rem 2.5rem;
+  padding: 1.3rem 2rem;
   margin-left: 2rem;
 }
 
@@ -574,12 +609,13 @@ hr {
 
 footer {
   background-color: hsl(231, 32%, 21%);
-  padding: 2.5rem 20rem;
+  padding: 2.7rem 20rem;
 }
 
 .footer-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -615,4 +651,5 @@ footer {
 
 .social-links > a > img {
   padding: 0 2rem;
+  align-items: center;
 }
