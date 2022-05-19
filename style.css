@@ -107,7 +107,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 7rem;
+  margin: 7rem 0 14rem 0;
 }
 
 .intro-text {
@@ -153,13 +153,25 @@ hr {
 }
 
 .intro-image {
+  position: relative;
   margin-right: 10rem;
+}
+
+.blue-bg {
+  position: absolute;
+  background-color: var(--softBlue);
+  width: 80%;
+  /* width: 52.5rem;*/
+  height: 40rem;
+  top: 14rem;
+  right: -10rem;
+  z-index: -1;
+  border-bottom-left-radius: 40%;
 }
 
 /* Sectrion 2  */
 .features-section {
   text-align: center;
-  padding-top: 7rem;
 }
 
 .features-section > h2 {
@@ -182,7 +194,7 @@ hr {
   font-weight: 400;
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 #features-selector-1 {
