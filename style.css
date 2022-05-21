@@ -79,6 +79,19 @@ hr {
   padding: 3.5rem 20rem;
 }
 
+#desktopNav {
+  display: block;
+}
+
+#mobileNav {
+  display: none;
+  background-color: grey;
+}
+
+#menu {
+  display: none;
+}
+
 .nav-links {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -102,7 +115,6 @@ hr {
 }
 
 /*  Section 1  */
-
 .main-intro-section {
   display: flex;
   flex-direction: row;
@@ -169,7 +181,7 @@ hr {
   border-bottom-left-radius: 40%;
 }
 
-/* Sectrion 2  */
+/*  Section 2  */
 .features-section {
   text-align: center;
 }
@@ -367,7 +379,6 @@ hr {
 }
 
 /* Section 3 */
-
 .dots {
   padding: 3.5rem 0;
 }
@@ -478,7 +489,6 @@ hr {
 }
 
 /* Section 4 */
-
 .FAQ-section {
   padding: 15rem 0 6rem 0;
 }
@@ -618,7 +628,6 @@ hr {
 }
 
 /* Footer */
-
 footer {
   background-color: hsl(231, 32%, 21%);
   padding: 2.7rem 20rem;
@@ -664,4 +673,95 @@ footer {
 .social-links > a > img {
   padding: 0 2rem;
   align-items: center;
+}
+
+@media only screen and (max-width: 1500px) {
+  /*  HEADER  */
+  .header-nav {
+    padding: 5rem 6rem;
+  }
+
+  #desktopNav {
+    display: none;
+  }
+
+  #mobileNav {
+    background-color: grey;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .mobile-nav-links > li > a {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    letter-spacing: 0.4rem;
+  }
+
+  .mobile-nav-links > hr {
+    border: 0.1rem solid darkgrey;
+    margin: 1rem auto;
+    width: 80%;
+  }
+
+  .mobile-login-btn {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 0.8rem;
+    padding: 2rem 5rem;
+    margin: 3.5rem auto;
+    letter-spacing: 0.4rem;
+    width: 80%;
+  }
+
+  .mobile-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  .mobile-social-links > a {
+    margin: 0 2rem;
+  }
+
+  /*  Section 1  */
+  .main-intro-section {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+
+  .intro-text {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .intro-text > p {
+    width: 30rem;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
+
+  .intro-image {
+    margin: 5rem;
+  }
+
+  .blue-bg {
+    height: 40rem;
+    top: 11rem;
+    right: -10rem;
+  }
 }
