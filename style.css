@@ -88,7 +88,7 @@ hr {
   background-color: grey;
 }
 
-#menu {
+#mobileMenu {
   display: none;
 }
 
@@ -476,7 +476,6 @@ hr {
 .opera-download > p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-
   color: var(--grayishBlue);
 }
 
@@ -581,6 +580,7 @@ hr {
   margin: 5rem auto;
 }
 
+/* Section 5 */
 .email-signup-section {
   display: flex;
   flex-direction: column;
@@ -678,7 +678,7 @@ footer {
 @media only screen and (max-width: 1500px) {
   /*  HEADER  */
   .header-nav {
-    padding: 5rem 6rem;
+    padding: 5rem 4rem;
   }
 
   #desktopNav {
@@ -689,7 +689,7 @@ footer {
     background-color: grey;
   }
 
-  #menu {
+  #mobileMenu {
     display: block;
   }
 
@@ -756,12 +756,111 @@ footer {
   }
 
   .intro-image {
-    margin: 5rem;
+    margin: 2rem;
+  }
+
+  .intro-svg {
+    max-width: 55rem;
   }
 
   .blue-bg {
-    height: 40rem;
-    top: 11rem;
+    height: 80%;
+    top: 6rem;
     right: -10rem;
+  }
+
+  .features-list {
+    flex-direction: column;
+  }
+
+  /* Section 3 */
+  .download-section > p {
+    max-width: 30rem;
+  }
+
+  .download-boxes {
+    flex-wrap: wrap;
+  }
+
+  .chrome-download {
+    margin: 5rem auto;
+  }
+
+  .firefox-download {
+    margin: 0 auto;
+  }
+
+  .opera-download {
+    margin: 5rem auto;
+  }
+
+  /* Section 4 */
+  .FAQ-section {
+    padding: 5rem 0 6rem 0;
+  }
+
+  .FAQ-section > h2 {
+    width: 30rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+
+  .FAQ-section > p {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+
+  .FAQ-questions {
+    width: 80%;
+  }
+
+  .sign-up {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .email-input {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  .contact-btn {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Footer */
+  footer {
+    background-color: hsl(231, 32%, 21%);
+    padding: 4rem 0;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .lh {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    margin: 0;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links > li {
+    margin-top: 3rem;
+  }
+
+  .social-links > a > img {
+    padding: 4rem 2rem 0 2rem;
   }
 }
