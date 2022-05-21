@@ -1,3 +1,28 @@
+let mobileMenu = document.getElementById("mobileMenu");
+let mobileNav = document.getElementById("mobileNav");
+
+mobileMenu.addEventListener("click", mobileMenuF);
+
+// Activates mobile menu
+function mobileMenuF() {
+  if (mobileNav.style.display == "none") {
+    mobileNav.style.display = "block";
+  } else {
+    mobileNav.style.display = "none";
+  }
+}
+
+// Prevents mobile menu from appearing in desktop site
+var e = window.matchMedia("(min-width: 1500px)");
+e.addListener(mediaQuery);
+
+function mediaQuery(e) {
+  if (e.matches) {
+    mobileNav.style.display = "none";
+  }
+}
+
+// FAQ section
 let questionOne = document.getElementById("Q1");
 let answerOne = document.querySelector(".A1");
 let arrowOne = document.querySelector(".arrow1");
@@ -25,8 +50,8 @@ function faqQOne() {
     arrowOne.style.rotate = "0deg";
   }
 }
-//
 
+//
 questionTwo.addEventListener("click", faqQTwo);
 
 function faqQTwo() {
@@ -40,7 +65,6 @@ function faqQTwo() {
 }
 
 //
-
 questionThree.addEventListener("click", faqQThree);
 
 function faqQThree() {
@@ -68,7 +92,6 @@ function faqQFour() {
 }
 
 //
-
 let featuresSelector1 = document.getElementById("features-selector-1");
 let featuresTab1 = document.querySelector(".feature-tab-1");
 
@@ -89,36 +112,5 @@ function tabOne() {
     featuresTab1.style.display = "flex";
     featuresTab2.style.display = "none";
     featuresTab3.style.display = "none";
-  }
-}
-
-/*featuresSelector2.addEventListener("click", tabTwo);
-
-function tabTwo() {
-  if (featuresTab2.style.display == "none") {
-    featuresTab2.style.display = "flex";
-    featuresTab1.style.display = "none";
-    featuresTab3.style.display = "none";
-  } else {
-    featuresTab2.style.display = "flex";
-    featuresTab1.style.display = "none";
-    featuresTab3.style.display = "none";
-  }
-}
-
-*/
-featuresSelector3.addEventListener("click", tabThree);
-
-function tabThree() {
-  if (featuresTab3.style.display == "none") {
-    featuresTab3.style.display = "flex";
-    featuresTab1.style.display = "none";
-    featuresTab2.style.display = "none";
-  } else {
-    featuresTab3.style.display = "flex";
-    featuresSelector3.style.color = "hsl(229, 31%, 21%)";
-    featuresTab1.style.display = "none";
-    featuresSelector1.style.color = "hsl(229, 8%, 60%)";
-    featuresTab2.style.display = "none";
   }
 }
