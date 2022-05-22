@@ -1,10 +1,11 @@
-let mobileMenu = document.getElementById("mobileMenu");
 let mobileNav = document.getElementById("mobileNav");
-
-mobileMenu.addEventListener("click", mobileMenuF);
+let oMobileMenu = document.getElementById("openMobileMenu");
+let cMobileMenu = document.getElementById("closeMobileMenu");
 
 // Activates mobile menu
-function mobileMenuF() {
+oMobileMenu.addEventListener("click", openMobileMenu);
+
+function openMobileMenu() {
   if (mobileNav.style.display == "none") {
     mobileNav.style.display = "block";
   } else {
@@ -12,8 +13,21 @@ function mobileMenuF() {
   }
 }
 
+// Closes mobile menu
+cMobileMenu.addEventListener("click", closeMobileMenu);
+
+function closeMobileMenu() {
+  console.log("dsmu");
+  if (mobileNav.style.display == "block") {
+    mobileNav.style.display = "none";
+    oMobileMenu.style.display = none;
+  } else {
+    oMobileMenu.style.display = none;
+  }
+}
+
 // Prevents mobile menu from appearing in desktop site
-var e = window.matchMedia("(min-width: 1500px)");
+var e = window.matchMedia("(min-width: 950px)");
 e.addListener(mediaQuery);
 
 function mediaQuery(e) {
