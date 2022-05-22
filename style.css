@@ -88,7 +88,7 @@ hr {
   background-color: grey;
 }
 
-#mobileMenu {
+#openMobileMenu {
   display: none;
 }
 
@@ -675,7 +675,7 @@ footer {
   align-items: center;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 950px) {
   /*  HEADER  */
   .header-nav {
     padding: 5rem 4rem;
@@ -686,51 +686,65 @@ footer {
   }
 
   #mobileNav {
-    background-color: grey;
+    position: absolute;
+    background-color: black;
+    opacity: 0.85;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
 
-  #mobileMenu {
+  #openMobileMenu {
     display: block;
+  }
+
+  .mobile-top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5%;
   }
 
   .mobile-nav-links > li > a {
     font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
+    margin: 2.5rem auto;
     letter-spacing: 0.4rem;
   }
 
   .mobile-nav-links > hr {
-    border: 0.1rem solid darkgrey;
+    width: 90%;
     margin: 1rem auto;
-    width: 80%;
+    border: 0.1rem solid darkgrey;
+    opacity: 0.2;
   }
 
   .mobile-login-btn {
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     color: white;
-    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid white;
-    border-radius: 0.8rem;
-    padding: 2rem 5rem;
+    width: 90%;
+    padding: 1.5rem 0;
     margin: 3.5rem auto;
+    border: 3px solid white;
+    border-radius: 0.7rem;
     letter-spacing: 0.4rem;
-    width: 80%;
   }
 
   .mobile-social-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 20rem;
   }
 
   .mobile-social-links > a {
@@ -744,9 +758,9 @@ footer {
   }
 
   .intro-text {
-    text-align: center;
     padding: 0;
     margin: 0 auto;
+    text-align: center;
   }
 
   .intro-text > p {
