@@ -169,7 +169,7 @@ hr {
   margin-right: 10rem;
 }
 
-.blue-bg {
+.right-blue-bg {
   position: absolute;
   background-color: var(--softBlue);
   width: 80%;
@@ -287,12 +287,12 @@ hr {
 */
 
 /*  Features Tab  */
-
 .features-tab-btn {
   padding: 1.2rem 2.2rem;
 }
 
 .feature-tab-1 {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -321,16 +321,15 @@ hr {
 }
 
 .feature-tab-2 {
+  position: relative;
   display: none;
   flex-direction: row;
-}
-
-.feature-tab-2-img {
-  margin: 6rem 0 0 20rem;
+  justify-content: center;
+  padding: 6rem 0 10rem 0;
 }
 
 .features-tab-text-2 {
-  margin: 12rem 0 0 12rem;
+  margin: 6rem 0 0 10rem;
   text-align: start;
 }
 
@@ -345,12 +344,13 @@ hr {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: var(--grayishBlue);
-  max-width: 40rem;
+  max-width: 37rem;
   margin-bottom: 3.5rem;
   line-height: 2.4rem;
 }
 
 .feature-tab-3 {
+  position: relative;
   display: none;
   flex-direction: row;
   justify-content: center;
@@ -376,6 +376,19 @@ hr {
   max-width: 36rem;
   margin-bottom: 4.5rem;
   line-height: 2.4rem;
+}
+
+.left-blue-bg {
+  position: absolute;
+  background-color: var(--softBlue);
+  width: 44%;
+  /* width: 52.5rem;*/
+  height: 38rem;
+  top: 14rem;
+  left: 0;
+  z-index: -1;
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 40%;
 }
 
 /* Section 3 */
@@ -678,7 +691,7 @@ footer {
 @media only screen and (max-width: 950px) {
   /*  HEADER  */
   .header-nav {
-    padding: 5rem 4rem;
+    padding: 5rem 7%;
   }
 
   #desktopNav {
@@ -709,7 +722,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 5%;
+    padding: 5rem 7%;
   }
 
   .mobile-nav-links > li > a {
@@ -724,7 +737,7 @@ footer {
   }
 
   .mobile-nav-links > hr {
-    width: 90%;
+    width: 85%;
     margin: 1rem auto;
     border: 0.1rem solid darkgrey;
     opacity: 0.2;
@@ -782,7 +795,7 @@ footer {
     max-width: 55rem;
   }
 
-  .blue-bg {
+  .right-blue-bg {
     height: 80%;
     top: 6rem;
     right: -10rem;
@@ -792,7 +805,10 @@ footer {
     flex-direction: column;
   }
 
-  /* Section 3 */
+  /*  Section 2  */
+  /*  Features Tab  */
+
+  /*  Section 3  */
   .download-section > p {
     max-width: 30rem;
   }
@@ -879,7 +895,7 @@ footer {
     margin-top: 3rem;
   }
 
-  .social-links > a > img {
-    padding: 4rem 2rem 0 2rem;
+  .social-links {
+    padding: 5rem 0 0 0;
   }
 }
