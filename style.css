@@ -698,13 +698,18 @@ footer {
 
   #openMobileMenu {
     display: block;
+    cursor: pointer;
+  }
+
+  #closeMobileMenu {
+    cursor: pointer;
   }
 
   .mobile-top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 5%;
+    padding: 5rem 5%;
   }
 
   .mobile-nav-links > li > a {
