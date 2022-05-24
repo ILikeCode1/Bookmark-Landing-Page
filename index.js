@@ -1,6 +1,7 @@
 let mobileNav = document.getElementById("mobileNav");
 let oMobileMenu = document.getElementById("openMobileMenu");
 let cMobileMenu = document.getElementById("closeMobileMenu");
+let mainLogo = document.querySelector(".header-logo");
 
 // Activates mobile menu
 oMobileMenu.addEventListener("click", openMobileMenu);
@@ -8,6 +9,8 @@ oMobileMenu.addEventListener("click", openMobileMenu);
 function openMobileMenu() {
   if (mobileNav.style.display == "none") {
     mobileNav.style.display = "block";
+    oMobileMenu.style.display = "none"; //removes menu button when menu is shown
+    mainLogo.style.display = "none";
   } else {
     mobileNav.style.display = "none";
   }
@@ -17,12 +20,12 @@ function openMobileMenu() {
 cMobileMenu.addEventListener("click", closeMobileMenu);
 
 function closeMobileMenu() {
-  console.log("dsmu");
   if (mobileNav.style.display == "block") {
     mobileNav.style.display = "none";
-    oMobileMenu.style.display = none;
+    oMobileMenu.style.display = "block"; //adds menu button after closing
+    mainLogo.style.display = "block";
   } else {
-    oMobileMenu.style.display = none;
+    oMobileMenu.style.display = "none";
   }
 }
 
@@ -33,6 +36,7 @@ e.addListener(mediaQuery);
 function mediaQuery(e) {
   if (e.matches) {
     mobileNav.style.display = "none";
+    mainLogo.style.display = "block";
   }
 }
 
@@ -109,7 +113,7 @@ function faqQFour() {
 let featuresSelector1 = document.getElementById("features-selector-1");
 let featuresTab1 = document.querySelector(".feature-tab-1");
 
-var featuresSelector2 = document.getElementById("features-selector-2 ");
+var featuresSelector2 = document.getElementById("features-selector-2");
 let featuresTab2 = document.querySelector(".feature-tab-2");
 
 let featuresSelector3 = document.getElementById("features-selector-3");
@@ -126,5 +130,35 @@ function tabOne() {
     featuresTab1.style.display = "flex";
     featuresTab2.style.display = "none";
     featuresTab3.style.display = "none";
+  }
+}
+
+featuresSelector2.addEventListener("click", tabTwo);
+
+function tabTwo() {
+  if (featuresTab2.style.display == "none") {
+    featuresTab2.style.display = "flex";
+    featuresTab1.style.display = "none";
+    featuresTab3.style.display = "none";
+  } else {
+    featuresTab2.style.display = "flex";
+    featuresTab1.style.display = "none";
+    featuresTab3.style.display = "none";
+  }
+}
+
+featuresSelector3.addEventListener("click", tabThree);
+
+function tabThree() {
+  if (featuresTab3.style.display == "none") {
+    featuresTab3.style.display = "flex";
+    featuresTab1.style.display = "none";
+    featuresTab2.style.display = "none";
+  } else {
+    featuresTab3.style.display = "flex";
+    featuresSelector3.style.color = "hsl(229, 31%, 21%)";
+    featuresTab1.style.display = "none";
+    featuresSelector1.style.color = "hsl(229, 8%, 60%)";
+    featuresTab2.style.display = "none";
   }
 }
