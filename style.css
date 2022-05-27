@@ -800,9 +800,9 @@ footer {
   }
 
   .right-blue-bg {
-    min-width: 95%;
     height: 80%;
     top: 20%;
+    right: -3rem;
     border-bottom-left-radius: 30%;
   }
 
@@ -847,7 +847,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 13rem 0 0 0;
+    margin: 15rem 0 0 0;
   }
 
   .features-tab-text-1 > h1 {
