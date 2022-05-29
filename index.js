@@ -109,7 +109,7 @@ function faqQFour() {
   }
 }
 
-//
+// FEATURES section
 let featuresSelector1 = document.getElementById("features-selector-1");
 let featuresTab1 = document.querySelector(".feature-tab-1");
 
@@ -124,12 +124,24 @@ featuresSelector1.addEventListener("click", tabOne);
 function tabOne() {
   if (featuresTab1.style.display == "none") {
     featuresTab1.style.display = "flex";
+    featuresSelector1.style.color = "hsl(229, 31%, 21%)";
+    featuresSelector1.style.borderBottom = "0.4rem solid hsl(0, 94%, 66%)";
     featuresTab2.style.display = "none";
+    featuresSelector2.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector2.style.borderBottom = "0.1rem solid lightgrey";
     featuresTab3.style.display = "none";
+    featuresSelector3.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector3.style.borderBottom = "0.1rem solid lightgrey";
   } else {
     featuresTab1.style.display = "flex";
+    featuresSelector1.style.color = "hsl(229, 31%, 21%)";
+    featuresSelector1.style.borderBottom = "0.4rem solid hsl(0, 94%, 66%)";
     featuresTab2.style.display = "none";
+    featuresSelector2.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector2.style.borderBottom = "0.1rem solid lightgrey";
     featuresTab3.style.display = "none";
+    featuresSelector3.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector3.style.borderBottom = "0.1rem solid lightgrey";
   }
 }
 
@@ -138,12 +150,24 @@ featuresSelector2.addEventListener("click", tabTwo);
 function tabTwo() {
   if (featuresTab2.style.display == "none") {
     featuresTab2.style.display = "flex";
+    featuresSelector2.style.color = "hsl(229, 31%, 21%)";
+    featuresSelector2.style.borderBottom = "0.4rem solid hsl(0, 94%, 66%)";
     featuresTab1.style.display = "none";
+    featuresSelector1.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector1.style.borderBottom = "none";
     featuresTab3.style.display = "none";
+    featuresSelector3.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector3.style.borderBottom = "0.1rem solid lightgrey";
   } else {
     featuresTab2.style.display = "flex";
+    featuresSelector2.style.color = "hsl(229, 31%, 21%)";
+    featuresSelector2.style.borderBottom = "0.4rem solid hsl(0, 94%, 66%)";
     featuresTab1.style.display = "none";
+    featuresSelector1.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector1.style.borderBottom = "none";
     featuresTab3.style.display = "none";
+    featuresSelector3.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector3.style.borderBottom = "0.1rem solid lightgrey";
   }
 }
 
@@ -152,13 +176,23 @@ featuresSelector3.addEventListener("click", tabThree);
 function tabThree() {
   if (featuresTab3.style.display == "none") {
     featuresTab3.style.display = "flex";
-    featuresTab1.style.display = "none";
+    featuresSelector3.style.color = "hsl(229, 31%, 21%)";
+    featuresSelector3.style.borderBottom = "0.4rem solid hsl(0, 94%, 66%)";
     featuresTab2.style.display = "none";
+    featuresSelector2.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector2.style.borderBottom = "0.1rem solid lightgrey";
+    featuresTab1.style.display = "none";
+    featuresSelector1.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector1.style.borderBottom = "0.1rem solid lightgrey";
   } else {
     featuresTab3.style.display = "flex";
     featuresSelector3.style.color = "hsl(229, 31%, 21%)";
+    featuresSelector3.style.borderBottom = "0.4rem solid hsl(0, 94%, 66%)";
+    featuresTab2.style.display = "none";
+    featuresSelector2.style.color = "hsl(229, 8%, 60%)";
+    featuresSelector2.style.borderBottom = "0.1rem solid lightgrey";
     featuresTab1.style.display = "none";
     featuresSelector1.style.color = "hsl(229, 8%, 60%)";
-    featuresTab2.style.display = "none";
+    featuresSelector1.style.borderBottom = "0.1rem solid lightgrey";
   }
 }
