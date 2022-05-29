@@ -121,7 +121,7 @@ a {
 }
 
 .intro-text {
-  padding: 8.5rem 0 0 20rem;
+  margin: 8.5rem 0 0 20rem;
 }
 
 .intro-text > h1 {
@@ -174,8 +174,8 @@ a {
   height: 40rem;
   top: 14rem;
   right: -10rem;
-  z-index: -1;
   border-bottom-left-radius: 35%;
+  z-index: -1;
 }
 
 /*  Section 2  */
@@ -186,7 +186,7 @@ a {
 .features-section > h2 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .features-section > p {
@@ -293,7 +293,7 @@ a {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   max-width: 34rem;
-  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .features-tab-text-2 > p {
@@ -322,7 +322,7 @@ a {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   max-width: 34rem;
-  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .features-tab-text-3 > p {
@@ -341,9 +341,9 @@ a {
   height: 38rem;
   top: 15rem;
   left: 0;
-  z-index: -1;
   border-bottom-right-radius: 40%;
   border-top-right-radius: 40%;
+  z-index: -1;
 }
 
 /* Section 3 */
@@ -388,7 +388,7 @@ a {
 .chrome-download > h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .chrome-download > p {
@@ -413,7 +413,7 @@ a {
 .firefox-download > h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .firefox-download > p {
@@ -424,7 +424,7 @@ a {
 }
 
 .firefox-logo {
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .opera-download {
@@ -438,7 +438,7 @@ a {
 .opera-download > h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .opera-download > p {
@@ -744,13 +744,11 @@ footer {
   /*  Section 1  */
   .main-intro-section {
     flex-direction: column-reverse;
-    padding-top: 5rem;
-    margin: 0 auto;
+    margin-top: 5rem;
   }
 
   .intro-text {
-    padding: 3rem 0 0 0;
-    margin: 0 auto;
+    margin: 3rem auto 0 auto;
     text-align: center;
   }
 
@@ -790,7 +788,7 @@ footer {
 
   /*  Section 2  */
   .features-section > h2 {
-    margin: 15rem auto 1.5rem auto;
+    padding: 15rem auto 1.5rem auto;
   }
 
   .features-section > p {
@@ -908,8 +906,8 @@ footer {
 
   .left-blue-bg {
     width: 80%;
-    height: 33%;
-    top: 14%;
+    height: 34%;
+    top: 15.5%;
     border-bottom-right-radius: 35%;
   }
 
@@ -941,8 +939,7 @@ footer {
 
   .FAQ-section > h2 {
     width: 30rem;
-    margin: 0 auto;
-    padding-bottom: 2rem;
+    margin: 0 auto 2rem auto;
   }
 
   .FAQ-section > p {
