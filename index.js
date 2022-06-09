@@ -30,13 +30,29 @@ function closeMobileMenu() {
 }
 
 // Prevents mobile menu from appearing in desktop site
-var e = window.matchMedia("(min-width: 950px)");
+var e = window.matchMedia("(min-width: 1150px)");
 e.addListener(mediaQuery);
 
 function mediaQuery(e) {
   if (e.matches) {
     mobileNav.style.display = "none";
     mainLogo.style.display = "block";
+  }
+}
+
+// Fixes problems with mobile menu when switching through mobile to desktop and vice versa
+var i = window.matchMedia("(min-width: 0px)");
+i.addListener(mediaQuery);
+
+function mediaQuery(i) {
+  if (i.matches) {
+    mobileNav.style.display = "none";
+    mainLogo.style.display = "block";
+    oMobileMenu.style.display = "none";
+  } else {
+    mobileNav.style.display = "none";
+    mainLogo.style.display = "block";
+    oMobileMenu.style.display = "block";
   }
 }
 
@@ -85,7 +101,7 @@ function tabTwo() {
     featuresSelector2.style.borderBottom = "0.4rem solid hsl(0, 94%, 66%)";
     featuresTab1.style.display = "none";
     featuresSelector1.style.color = "hsl(229, 8%, 60%)";
-    featuresSelector1.style.borderBottom = "none";
+    featuresSelector1.style.borderBottom = "0.1rem solid lightgrey";
     featuresTab3.style.display = "none";
     featuresSelector3.style.color = "hsl(229, 8%, 60%)";
     featuresSelector3.style.borderBottom = "0.1rem solid lightgrey";
@@ -95,7 +111,7 @@ function tabTwo() {
     featuresSelector2.style.borderBottom = "0.4rem solid hsl(0, 94%, 66%)";
     featuresTab1.style.display = "none";
     featuresSelector1.style.color = "hsl(229, 8%, 60%)";
-    featuresSelector1.style.borderBottom = "none";
+    featuresSelector1.style.borderBottom = "0.1rem solid lightgrey";
     featuresTab3.style.display = "none";
     featuresSelector3.style.color = "hsl(229, 8%, 60%)";
     featuresSelector3.style.borderBottom = "0.1rem solid lightgrey";
