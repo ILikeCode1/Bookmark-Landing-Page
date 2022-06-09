@@ -688,7 +688,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
   /*  HEADER  */
   .header-nav {
     padding: 4rem 7%;
