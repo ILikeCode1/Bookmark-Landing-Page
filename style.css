@@ -732,7 +732,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     padding: 2.5rem;
     letter-spacing: 0.4rem;
@@ -747,7 +747,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 85%;
     padding: 1.5rem 0;
     margin: 3.5rem auto;
     border: 3px solid white;
@@ -972,10 +972,10 @@ footer {
   }
 
   .sign-up {
-    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
   }
 
   .email-input {
@@ -985,9 +985,9 @@ footer {
   }
 
   .contact-btn {
-    text-align: center;
     width: 100%;
     margin: 0;
+    text-align: center;
   }
 
   /* Footer */
