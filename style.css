@@ -732,8 +732,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.5rem auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem;
     letter-spacing: 0.4rem;
+    border-top: 0.1rem solid darkgrey;
+    border-bottom: 0.1rem solid darkgrey;
   }
 
   .mobile-login-btn {
