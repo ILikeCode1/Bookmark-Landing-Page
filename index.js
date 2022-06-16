@@ -165,12 +165,9 @@ questionOne.addEventListener("click", faqQOne);
 
 function faqQOne() {
   if (answerOne.style.display == "none") {
-    questionOne.style.borderBottom = "none";
     answerOne.style.display = "block";
-    answerOne.style.borderBottom = "0.1rem solid lightgrey";
     arrowOne.style.rotate = "180deg";
   } else {
-    questionOne.style.borderBottom = "0.1rem solid lightgrey";
     answerOne.style.display = "none";
     arrowOne.style.rotate = "0deg";
   }
@@ -181,12 +178,9 @@ questionTwo.addEventListener("click", faqQTwo);
 
 function faqQTwo() {
   if (answerTwo.style.display == "none") {
-    questionTwo.style.borderBottom = "none";
     answerTwo.style.display = "block";
-    answerTwo.style.borderBottom = "0.1rem solid lightgrey";
     arrowOne.style.rotate = "180deg";
   } else {
-    questionTwo.style.borderBottom = "0.1rem solid lightgrey";
     answerTwo.style.display = "none";
     arrowTwo.style.rotate = "0deg";
   }
@@ -197,12 +191,9 @@ questionThree.addEventListener("click", faqQThree);
 
 function faqQThree() {
   if (answerThree.style.display == "none") {
-    questionThree.style.borderBottom = "none";
     answerThree.style.display = "block";
-    answerThree.style.borderBottom = "0.1rem solid lightgrey";
     arrowThree.style.rotate = "180deg";
   } else {
-    questionThree.style.borderBottom = "0.1rem solid lightgrey";
     answerThree.style.display = "none";
     arrowThree.style.rotate = "0deg";
   }
@@ -214,12 +205,9 @@ questionFour.addEventListener("click", faqQFour);
 
 function faqQFour() {
   if (answerFour.style.display == "none") {
-    questionFour.style.borderBottom = "none";
     answerFour.style.display = "block";
-    answerFour.style.borderBottom = "0.1rem solid lightgrey";
     arrowFour.style.rotate = "180deg";
   } else {
-    questionFour.style.borderBottom = "0.1rem solid lightgrey";
     answerFour.style.display = "none";
     arrowFour.style.rotate = "0deg";
   }
