@@ -503,7 +503,7 @@ a {
   font-weight: 400;
 }
 
-#Q1 {
+.Question1 {
   border-top: 0.1rem solid lightgrey;
   border-bottom: 0.1rem solid lightgrey;
 }
@@ -518,7 +518,7 @@ a {
   line-height: 2.5rem;
 }
 
-#Q2 {
+.Question2 {
   border-bottom: 0.1rem solid lightgrey;
 }
 
@@ -532,7 +532,7 @@ a {
   line-height: 2.5rem;
 }
 
-#Q3 {
+.Question3 {
   border-bottom: 0.1rem solid lightgrey;
 }
 
@@ -546,7 +546,7 @@ a {
   line-height: 2.5rem;
 }
 
-#Q4 {
+.Question4 {
   border-bottom: 0.1rem solid lightgrey;
 }
 
