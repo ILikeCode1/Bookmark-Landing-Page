@@ -974,6 +974,22 @@ footer {
     width: 80%;
   }
 
+  .A1 {
+    max-width: 100%;
+  }
+
+  .A2 {
+    max-width: 100%;
+  }
+
+  .A3 {
+    max-width: 100%;
+  }
+
+  .A4 {
+    max-width: 100%;
+  }
+
   .sign-up {
     flex-direction: column;
     justify-content: center;
