@@ -179,7 +179,7 @@ questionTwo.addEventListener("click", faqQTwo);
 function faqQTwo() {
   if (answerTwo.style.display == "none") {
     answerTwo.style.display = "block";
-    arrowOne.style.rotate = "180deg";
+    arrowTwo.style.rotate = "180deg";
   } else {
     answerTwo.style.display = "none";
     arrowTwo.style.rotate = "0deg";
