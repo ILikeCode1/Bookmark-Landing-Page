@@ -732,12 +732,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    padding: 3rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .mobile-nav-links > li:nth-child(odd) {
     width: 85%;
     margin: 0 auto;
-    padding: 2.5rem;
-    letter-spacing: 0.4rem;
-    border-top: 0.1rem solid darkgrey;
-    border-bottom: 0.1rem solid darkgrey;
+    border-top: 0.1rem solid var(--grayishBlue);
+    border-bottom: 0.1rem solid var(--grayishBlue);
   }
 
   .mobile-login-btn {
@@ -830,7 +834,6 @@ footer {
   #features-selector-2 {
     width: 75%;
     padding: 1.5rem 0;
-    border-top: 0.1rem solid lightgrey;
   }
 
   #features-selector-3 {
